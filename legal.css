@@ -1,0 +1,212 @@
+/* ================== BASE ================== */
+:root {
+  --bg: #0f172a;
+  --bg-soft: #1e293b;
+  --card: rgba(255,255,255,0.04);
+  --border: rgba(255,255,255,0.08);
+  --accent: #8b5cf6;
+  --text: #f8fafc;
+  --muted: #94a3b8;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body.legal-page {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(135deg, var(--bg), var(--bg-soft));
+  color: var(--text);
+  display: flex;
+  justify-content: center;
+  padding: 60px 20px;
+}
+
+/* ================== CONTAINER ================== */
+.legal-container {
+  width: 100%;
+  max-width: 900px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 50px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+}
+
+/* ================== HEADER ================== */
+.gradient-text {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  background: linear-gradient(135deg, #ffffff, var(--accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.last-updated {
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin-bottom: 40px;
+  text-align: right;
+}
+
+/* ================== SECTIONS ================== */
+.legal-section {
+  margin-bottom: 35px;
+}
+
+.legal-section h2 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: var(--accent);
+}
+
+.legal-section p {
+  font-size: 0.95rem;
+  color: var(--muted);
+  line-height: 1.7;
+  text-align: justify;
+}
+
+/* ================== HIGHLIGHT ================== */
+.highlight-box {
+  background: rgba(139, 92, 246, 0.08);
+  border: 1px solid rgba(139, 92, 246, 0.3);
+  border-left: 4px solid var(--accent);
+  padding: 20px;
+  border-radius: 12px;
+}
+
+/* ================== BACK LINK ================== */
+.back-link {
+  display: inline-block;
+  margin-top: 30px;
+  font-weight: 600;
+  color: var(--accent);
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.back-link:hover {
+  opacity: 0.7;
+  transform: translateX(-4px);
+}
+
+/* ================== RESPONSIVE ================== */
+@media (max-width: 768px) {
+  .legal-container {
+    padding: 30px 20px;
+  }
+
+  .gradient-text {
+    font-size: 1.6rem;
+  }
+}
+/*-------------------------ul/Li---------------------------------*/
+.legal-section ul {
+  padding-left: 18px;
+  margin: 10px 0;
+}
+
+.legal-section li {
+  font-size: 0.95rem;
+  color: var(--muted);
+  line-height: 1.7;
+  margin-bottom: 8px;
+}
+
+/*---------------------------Connect--------------------------*/
+.connect-page{
+    max-width: 760px;
+    padding-top: 80px;
+    padding-bottom: 60px;
+}
+
+.connect-header{
+    margin-bottom: 48px;
+}
+
+.connect-subtitle{
+    font-size: 12px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    opacity: 0.55;
+    margin-bottom: 14px;
+}
+
+.connect-description{
+    margin-top: 18px;
+    line-height: 1.8;
+    opacity: 0.78;
+}
+
+.connect-grid{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin-bottom: 52px;
+}
+
+.contact-card{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    padding: 22px 24px;
+
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 18px;
+
+    background: rgba(255,255,255,0.02);
+
+    text-decoration: none;
+    color: inherit;
+
+    transition:
+    transform 0.25s ease,
+    border-color 0.25s ease,
+    background 0.25s ease;
+}
+
+.contact-card:hover{
+    transform: translateY(-3px);
+
+    border-color: rgba(255,255,255,0.18);
+
+    background: rgba(255,255,255,0.04);
+}
+
+.contact-type{
+    font-size: 12px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    opacity: 0.55;
+}
+
+.contact-value{
+    font-size: 16px;
+    font-weight: 600;
+    word-break: break-word;
+}
+
+/*---------------------------Site Link--------------------------*/
+
+.site-link:link {
+    color: #4bd0bf;   /* رنگ اولیه */
+    text-decoration: none;
+}
+
+.site-link:visited {
+    color: #9b5cff;   /* رنگ بعد از بازدید */
+}
+
+.site-link:hover {
+    color: #67e8f9;
+    text-decoration: underline;
+}
+
+.site-link:active {
+    color: #38bdf8;
+}
